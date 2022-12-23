@@ -9,8 +9,10 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+#importing the chicago data
+```{r}
+data_raw <- read.csv("Data/grocery-stores-2013.csv")
 
-```{r cars}
-summary(cars)
+store_locations <- data_raw[,c(1,15:16)]
 ```
 
